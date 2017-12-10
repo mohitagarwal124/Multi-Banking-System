@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ERDiagram version="1.1">
+  <Connection session="aa" database="MULTIBANKING" />
+  <Drawing gridVisible="false" snapOn="false" fastRouting="false" labelsVisible="true" />
+  <Tables>
+    <Table name="ACCOUNT_DETAILS">
+      <Drawing expanded="true" location="0,30" dimensions="244,188" />
+      <Columns>
+        <Column name="ACCOUNTID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="ACCOUNTNO" primary_key="false" foreign_key="false" required="false" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="ACCOUNTTYPE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="BANKNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="BALANCE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="BANKPASSKEY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="ACCOUNTSTATUS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="USERID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="BANK_DETAILS">
+      <Drawing expanded="true" location="193,878" dimensions="210,69" />
+      <Columns>
+        <Column name="BANK_ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="BANKNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="BILLING_DETAILS">
+      <Drawing expanded="true" location="344,10" dimensions="256,228" />
+      <Columns>
+        <Column name="BILL_ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="ACCOUNTNO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="ACCOUNTTYPE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="BANKNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="BALANCE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="BILLPAYMENT_DATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="BILLERNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="BILLNO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="BILLAMOUNT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="USERID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="LOGIN_DETAILS">
+      <Drawing expanded="true" location="550,836" dimensions="214,129" />
+      <Columns>
+        <Column name="LOGINID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="USERNAME" primary_key="false" foreign_key="false" required="false" unique="true">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="PASSWORD" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="USERTYPE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="USERSTATUS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="MANAGER_DETAILS">
+      <Drawing expanded="true" location="716,348" dimensions="254,388" />
+      <Columns>
+        <Column name="MANAGERID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="USERNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="FIRSTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="LASTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="SEX" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="ADDRESS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="AREACODE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="CITY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="STATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="COUNTRY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="DOB" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="EMAIL" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="MOBILE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="SECURITYQUESTION" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="ANSWER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="PASSWORD" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="LOGINID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="BANKNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="TRANSACTION_DETAILS">
+      <Drawing expanded="true" location="700,0" dimensions="260,248" />
+      <Columns>
+        <Column name="TRAN_ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="ACCOUNTNO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="ACCOUNTTYPE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="BANKNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="BALANCE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="TRANSACTION_DATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="R_ACCOUNTNO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="R_ACCOUNTTYPE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="R_BANKNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="AMOUNT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="USERID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="USER_DETAILS">
+      <Drawing expanded="true" location="328,348" dimensions="288,388" />
+      <Columns>
+        <Column name="USERID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="USERNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="FIRSTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="LASTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="SEX" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="ADDRESS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="AREACODE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="CITY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="STATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="COUNTRY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="DOB" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="EMAIL" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="MOBILE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="SECURITYQUESTION" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="ANSWER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="PASSWORD" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="TRANSACTIONPASSWORD" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="LOGINID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+  </Tables>
+  <Relationships>
+    <Relationship name="ACCOUNT_DETAILS_FK">
+      <Details primary_table="USER_DETAILS" foreign_table="ACCOUNT_DETAILS">
+        <PrimaryKeys>
+          <ColumnName name="USERID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USERID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="BILLING_DETAILS_FK">
+      <Details primary_table="USER_DETAILS" foreign_table="BILLING_DETAILS">
+        <PrimaryKeys>
+          <ColumnName name="USERID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USERID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="MANAGER_DETAILS_FK">
+      <Details primary_table="LOGIN_DETAILS" foreign_table="MANAGER_DETAILS">
+        <PrimaryKeys>
+          <ColumnName name="LOGINID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="LOGINID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="TRANSACTION_DETAILS_FK">
+      <Details primary_table="USER_DETAILS" foreign_table="TRANSACTION_DETAILS">
+        <PrimaryKeys>
+          <ColumnName name="USERID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USERID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="USER_DETAILS_FK">
+      <Details primary_table="LOGIN_DETAILS" foreign_table="USER_DETAILS">
+        <PrimaryKeys>
+          <ColumnName name="LOGINID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="LOGINID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+  </Relationships>
+</ERDiagram>
+
